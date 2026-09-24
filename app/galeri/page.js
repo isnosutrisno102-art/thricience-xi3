@@ -1,0 +1,3 @@
+import { createClient } from '../../lib/supabase'
+export const dynamic='force-dynamic'
+export default async function Galeri(){const supabase=createClient();const {data}=await supabase.from('gallery').select('*').order('created_at',{ascending:false});return <main className="page"><div className="container"><div className="page-head"><span className="eyebrow">MEMORIES</span><h1>Galeri Kelas</h1><p>Dokumentasi kegiatan dan momen THRICIENCE XI.3.</p></div><div className="gallery">{(data||[]).map(x=><figure key={x.id}><img src={x.image_url} alt={x.caption||'Galeri THRICIENCE'}/><figcaption>{x.caption}</figcaption></figure>)}</div></div></main>}
