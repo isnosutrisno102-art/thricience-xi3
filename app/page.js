@@ -61,18 +61,63 @@ export default async function Home() {
           href="/berita"
         />
 
-        {posts.length ? (
-          <div className="post-grid">
-            {posts.map((p) => (
-              <PostCard key={p.id} post={p} />
-            ))}
+        <div className="latest-layout">
+          <div className="latest-posts">
+            {posts.length ? (
+              <div className="post-grid">
+                {posts.map((p) => (
+                  <PostCard key={p.id} post={p} />
+                ))}
+              </div>
+            ) : (
+              <div className="empty">
+                Belum ada berita. Masuk ke halaman admin untuk
+                menambahkan info pertama.
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="empty">
-            Belum ada berita. Masuk ke halaman admin untuk
-            menambahkan info pertama.
-          </div>
-        )}
+
+          <aside className="teacher-card">
+            <div className="teacher-photo-placeholder">
+              <span>AT</span>
+              <small>Foto wali kelas</small>
+            </div>
+
+            <div className="teacher-info">
+              <span className="teacher-label">PROFIL PENDIDIK</span>
+              <h2>Alfonsus Arjuna Tosari, S.Si, M.Pd</h2>
+              <p className="teacher-role">
+                Wali Kelas XI.3 — THRICIENCE
+              </p>
+
+              <div className="teacher-divider"></div>
+
+              <p className="teacher-greeting">
+                Selamat datang di ruang digital THRICIENCE XI.3.
+                Mari bertumbuh dalam pengetahuan, karakter,
+                kedisiplinan, dan kebersamaan.
+              </p>
+
+              <details className="teacher-more">
+                <summary>Selengkapnya</summary>
+                <p>
+                  Saya berharap kelas ini menjadi tempat bagi
+                  setiap siswa untuk bertumbuh dalam pengetahuan,
+                  karakter, kedisiplinan, dan kebersamaan. Teruslah
+                  berani bermimpi, berkarya, dan saling mendukung
+                  dalam setiap proses pembelajaran. Ingatlah bahwa
+                  keberhasilan bukan hanya tentang prestasi, tetapi
+                  juga tentang sikap, tanggung jawab, dan kepedulian
+                  terhadap sesama.
+                </p>
+                <p className="teacher-closing">
+                  Bersama bertumbuh, bersama berprestasi, dan
+                  bersama meraih masa depan.
+                </p>
+              </details>
+            </div>
+          </aside>
+        </div>
       </section>
 
       <section className="quick">
