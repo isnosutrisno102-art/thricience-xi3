@@ -22,22 +22,27 @@ export default async function Home() {
 
   return (
     <main>
+      {/* HERO */}
       <section className="hero">
         <div className="container hero-grid">
           <div>
             <span className="eyebrow">WELCOME TO XI.3</span>
             <h1>THRICIENCE</h1>
+
             <p className="hero-sub">
               Science • Society • Solidarity
             </p>
+
             <p className="hero-text">
               Portal informasi kelas XI.3 untuk berbagi berita,
               pengumuman, prestasi, dan momen-momen terbaik bersama.
             </p>
+
             <div className="hero-actions">
               <Link href="/berita" className="btn primary">
                 Lihat Berita
               </Link>
+
               <Link href="/tentang" className="btn ghost">
                 Tentang Kelas
               </Link>
@@ -54,15 +59,17 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* INFO TERBARU DAN PROFIL WALI KELAS */}
       <section className="section container">
-        <SectionTitle
-          eyebrow="UPDATE"
-          title="Info Terbaru"
-          href="/berita"
-        />
-
         <div className="latest-layout">
+          {/* KOLOM KIRI: BERITA */}
           <div className="latest-posts">
+            <SectionTitle
+              eyebrow="UPDATE"
+              title="Info Terbaru"
+              href="/berita"
+            />
+
             {posts.length ? (
               <div className="post-grid">
                 {posts.map((p) => (
@@ -77,6 +84,7 @@ export default async function Home() {
             )}
           </div>
 
+          {/* KOLOM KANAN: PROFIL WALI KELAS */}
           <aside className="teacher-card">
             <div className="teacher-photo-placeholder">
               <span>AT</span>
@@ -84,8 +92,14 @@ export default async function Home() {
             </div>
 
             <div className="teacher-info">
-              <span className="teacher-label">PROFIL PENDIDIK</span>
-              <h2>Alfonsus Arjuna Tosari, S.Si, M.Pd</h2>
+              <span className="teacher-label">
+                PROFIL PENDIDIK
+              </span>
+
+              <h2>
+                Alfonsus Arjuna Tosari, S.Si, M.Pd
+              </h2>
+
               <p className="teacher-role">
                 Wali Kelas XI.3 — THRICIENCE
               </p>
@@ -94,22 +108,22 @@ export default async function Home() {
 
               <p className="teacher-greeting">
                 Selamat datang di ruang digital THRICIENCE XI.3.
-                Mari bertumbuh dalam pengetahuan, karakter,
+                Saya berharap kelas ini menjadi tempat bagi setiap
+                siswa untuk bertumbuh dalam pengetahuan, karakter,
                 kedisiplinan, dan kebersamaan.
               </p>
 
               <details className="teacher-more">
-                <summary>Selengkapnya</summary>
+                <summary>Selengkapnya →</summary>
+
                 <p>
-                  Saya berharap kelas ini menjadi tempat bagi
-                  setiap siswa untuk bertumbuh dalam pengetahuan,
-                  karakter, kedisiplinan, dan kebersamaan. Teruslah
-                  berani bermimpi, berkarya, dan saling mendukung
-                  dalam setiap proses pembelajaran. Ingatlah bahwa
-                  keberhasilan bukan hanya tentang prestasi, tetapi
-                  juga tentang sikap, tanggung jawab, dan kepedulian
-                  terhadap sesama.
+                  Teruslah berani bermimpi, berkarya, dan saling
+                  mendukung dalam setiap proses pembelajaran.
+                  Ingatlah bahwa keberhasilan bukan hanya tentang
+                  prestasi, tetapi juga tentang sikap, tanggung jawab,
+                  dan kepedulian terhadap sesama.
                 </p>
+
                 <p className="teacher-closing">
                   Bersama bertumbuh, bersama berprestasi, dan
                   bersama meraih masa depan.
@@ -120,16 +134,19 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* MENU CEPAT */}
       <section className="quick">
         <div className="container quick-grid">
           <Link href="/pengumuman">
             <b>📢 Pengumuman</b>
             <span>Info penting kelas</span>
           </Link>
+
           <Link href="/prestasi">
             <b>🏆 Prestasi</b>
             <span>Pencapaian siswa</span>
           </Link>
+
           <Link href="/galeri">
             <b>📸 Galeri</b>
             <span>Dokumentasi kegiatan</span>
