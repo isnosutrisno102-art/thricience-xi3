@@ -62,6 +62,7 @@ export default async function Home() {
       {/* INFO TERBARU DAN PROFIL WALI KELAS */}
       <section className="section container">
         <div className="latest-layout">
+
           {/* KOLOM KIRI: BERITA */}
           <div className="latest-posts">
             <SectionTitle
@@ -86,9 +87,11 @@ export default async function Home() {
 
           {/* KOLOM KANAN: PROFIL WALI KELAS */}
           <aside className="teacher-card">
-            <div className="teacher-photo-placeholder">
-              <span>AT</span>
-              <small>Foto wali kelas</small>
+            <div className="teacher-photo">
+              <img
+                src="/wali-kelas.png"
+                alt="Alfonsus Arjuna Tosari, wali kelas XI.3"
+              />
             </div>
 
             <div className="teacher-info">
@@ -131,6 +134,7 @@ export default async function Home() {
               </details>
             </div>
           </aside>
+
         </div>
       </section>
 
