@@ -27,6 +27,7 @@ export default async function Home() {
         <div className="container hero-grid">
           <div>
             <span className="eyebrow">WELCOME TO XI.3</span>
+
             <h1>THRICIENCE</h1>
 
             <p className="hero-sub">
@@ -49,12 +50,19 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="hero-card">
+          {/* LOGO KELAS */}
+          <div className="hero-card hero-logo-card">
             <div className="orbit one"></div>
             <div className="orbit two"></div>
-            <div className="hero-symbol">T</div>
-            <p>XI.3</p>
-            <small>CLASS PORTAL</small>
+
+            <img
+              src="/logo.png"
+              alt="Logo kelas THRICIENCE XI.3"
+              className="hero-class-logo"
+            />
+
+            <p>THRICIENCE</p>
+            <small>SCIENCE • SOCIETY • SOLIDARITY</small>
           </div>
         </div>
       </section>
