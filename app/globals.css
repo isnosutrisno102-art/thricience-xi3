@@ -806,3 +806,43 @@ a {
     height: 260px;
   }
 }
+
+/* LOGO KELAS DI HERO */
+.hero-logo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 28px;
+}
+
+.hero-class-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(230px, 80%);
+  height: 200px;
+  object-fit: contain;
+}
+
+.hero-logo-card p {
+  position: static;
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+
+.hero-logo-card small {
+  position: static;
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  .hero-class-logo {
+    width: min(190px, 75%);
+    height: 150px;
+  }
+}
