@@ -76,3 +76,10 @@
     flex-wrap: wrap;
   }
 }
+/* Hapus logo kelas dari bagian hero */
+.hero-floating-logo,
+.hero.hero-photo .hero-card,
+.hero.hero-photo .hero-logo-card,
+.hero.hero-photo .orbit {
+  display: none !important;
+}
