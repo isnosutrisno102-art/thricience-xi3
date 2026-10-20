@@ -50,11 +50,6 @@ export default async function Home() {
             </div>
           </div>
 
-          <img
-            src="/logo.png"
-            alt="Logo kelas THRICIENCE XI.3"
-            className="hero-floating-logo"
-          />
         </div>
       </section>
 
