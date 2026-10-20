@@ -16,7 +16,7 @@
       rgba(7, 26, 54, 0.78) 55%,
       rgba(7, 26, 54, 0.40) 100%
     ),
-    url('/foto-kelas.jpg');
+   url('/foto%20kelas.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
