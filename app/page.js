@@ -23,9 +23,9 @@ export default async function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="hero">
+      <section className="hero hero-photo">
         <div className="container hero-grid">
-          <div>
+          <div className="hero-content">
             <span className="eyebrow">WELCOME TO XI.3</span>
 
             <h1>THRICIENCE</h1>
@@ -50,28 +50,17 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* LOGO KELAS */}
-          <div className="hero-card hero-logo-card">
-            <div className="orbit one"></div>
-            <div className="orbit two"></div>
-
-            <img
-              src="/logo.png"
-              alt="Logo kelas THRICIENCE XI.3"
-              className="hero-class-logo"
-            />
-
-            <p>THRICIENCE</p>
-            <small>SCIENCE • SOCIETY • SOLIDARITY</small>
-          </div>
+          <img
+            src="/logo.png"
+            alt="Logo kelas THRICIENCE XI.3"
+            className="hero-floating-logo"
+          />
         </div>
       </section>
 
       {/* INFO TERBARU DAN PROFIL WALI KELAS */}
       <section className="section container">
         <div className="latest-layout">
-
-          {/* KOLOM KIRI: BERITA */}
           <div className="latest-posts">
             <SectionTitle
               eyebrow="UPDATE"
@@ -93,7 +82,6 @@ export default async function Home() {
             )}
           </div>
 
-          {/* KOLOM KANAN: PROFIL WALI KELAS */}
           <aside className="teacher-card">
             <div className="teacher-photo">
               <img
@@ -107,9 +95,7 @@ export default async function Home() {
                 PROFIL PENDIDIK
               </span>
 
-              <h2>
-                Alfonsus Arjuna Tosari, S.Si, M.Pd
-              </h2>
+              <h2>Alfonsus Arjuna Tosari, S.Si, M.Pd</h2>
 
               <p className="teacher-role">
                 Wali Kelas XI.3 — THRICIENCE
@@ -142,7 +128,6 @@ export default async function Home() {
               </details>
             </div>
           </aside>
-
         </div>
       </section>
 
